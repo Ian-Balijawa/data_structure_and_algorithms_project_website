@@ -27,14 +27,14 @@ a {
 
 body {
 	min-height: 100vh;
-	font-size: 1.6rem;
+	font-size: 1rem;
 	font-family: 'Open Sans', 'Poppins';
 	/* font-family: 'Poppins'; */
 }
 
 p {
 	margin-bottom: 1rem;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 }
 
@@ -52,7 +52,7 @@ strong {
 }
 
 .title {
-	font-size: 2.4rem;
+	font-size: 2rem;
 	color: #043f4e;
 }
 
