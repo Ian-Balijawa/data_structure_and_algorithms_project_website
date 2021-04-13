@@ -1,177 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 :root {
-    font-size: 62.5%;
+	font-size: 62.5%;
 
-    /* vaiables */
-    --color-grey-light: rgba(238, 238, 238, 0.733);
+	/* vaiables */
+	--color-grey-light: rgba(238, 238, 238, 0.733);
 }
 
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
 }
 
 li {
-    list-style: none;
-    padding-left: 1.8rem;
-    font-weight: bolder;
+	list-style: none;
+	padding-left: 1.8rem;
+	font-weight: bolder;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 
 body {
-    min-height: 100vh;
-    font-size: 1.6rem;
-    /* font-family: 'Open Sans', 'Poppins'; */
-    font-family: 'Poppins';
+	min-height: 100vh;
+	font-size: 1.6rem;
+	font-family: 'Open Sans', 'Poppins';
+	/* font-family: 'Poppins'; */
 }
 
 p {
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
-    font-weight: 500;
+	margin-bottom: 1rem;
+	font-size: 1.6rem;
+	font-weight: 500;
 }
 
 p.item {
-    margin-bottom: .75rem;
-    padding-left: 1.5rem;
+	margin-bottom: 0.75rem;
+	padding-left: 1.5rem;
 }
 
 .bold {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 strong {
-    font-weight: bolder;
+	font-weight: bolder;
 }
 
 .title {
-    font-size: 2.4rem;
-    color: #043f4e;
+	font-size: 2.4rem;
+	color: #043f4e;
 }
 
 .subtitle {
-    font-size: 2rem;
-    margin-top: 1rem;
-    color: #043f4e;
+	font-size: 2rem;
+	margin-top: 1rem;
+	color: #043f4e;
 }
 
 .main-wrapper {
-    width: 100vw;
+	width: 100vw;
 }
 
 .wrapper {
-    display: flex;
+	display: flex;
 }
 
 .header {
-    min-height: 5rem;
-    background-color: #04a39b;
+	min-height: 5rem;
+	background-color: #04a39b;
 }
 
 .header__content {
-    height: 5rem;
-    background-color: #04a39b;
-    position: fixed;
-    width: 100%;
-    color: #fff;
+	height: 5rem;
+	background-color: #04a39b;
+	position: fixed;
+	width: 100%;
+	color: #fff;
 }
 
-.header__content>h2 {
-    text-align: center;
+.header__content > h2 {
+	text-align: center;
 }
 
 .sidebar {
-    flex: 0 0 18%;
-    background-color: var(--color-grey-light);
+	flex: 0 0 18%;
+	background-color: var(--color-grey-light);
 }
 
 .topics {
-    flex: 0 0 18%;
-    align-self: flex-start;
-    margin: 2rem 0;
+	flex: 0 0 18%;
+	align-self: flex-start;
+	margin: 2rem 0;
 }
 
 .topics__content {
-    padding: 1rem .75rem;
-    width: 100%;
-    background-color: #12d1c8;
-    position: fixed;
-    top: 6rem;
-    min-height: 20rem;
-    color: #043f4e;
+	padding: 1rem 0.75rem;
+	width: 100%;
+	background-color: #12d1c8;
+	position: fixed;
+	top: 6rem;
+	min-height: 20rem;
+	color: #043f4e;
 }
 
 .topics__list {
-    font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 .topics__item {
-    margin: .85rem 0;
-    padding-left: 1.2rem;
+	margin: 0.85rem 0;
+	padding-left: 1.2rem;
 }
 
 .main-content {
-    flex: 1;
+	flex: 1;
 }
 
 .content {
-    margin: 1rem auto;
-    padding: 0 3rem;
+	margin: 1rem auto;
+	padding: 0 3rem;
 }
 
 .sidebar__list {
-    padding: 0.5rem 0;
-    font-size: 1.45rem;
-    min-height: 100vh;
+	padding: 0.5rem 0;
+	font-size: 1.45rem;
+	min-height: 100vh;
 }
 
 .sidebar__item {
-    padding: .4rem 1rem;
-    margin: .4rem 0;
-    cursor: pointer;
-    transition: background-color 0.7s;
+	padding: 0.4rem 1rem;
+	margin: 0.4rem 0;
+	cursor: pointer;
+	transition: background-color 0.7s;
 }
 
-.sidebar__item>a {
-    color: #043f4e;
-    height: 100%;
-    width: 100%;
-    transition: color .75s;
+.sidebar__item > a {
+	color: #043f4e;
+	height: 100%;
+	width: 100%;
+	transition: color 0.75s;
 }
 
 .sidebar__item:hover,
 .sidebar__item:focus {
-    background-color: #0edbd1;
+	background-color: #0edbd1;
 }
 
-.sidebar__item:hover>a,
-.sidebar__item:focus>a {
-    color: #fff;
+.sidebar__item:hover > a,
+.sidebar__item:focus > a {
+	color: #fff;
 }
 
 .active {
-    background-color: #04a39b;
-    color: #fff;
+	background-color: #04a39b;
+	color: #fff;
 }
 
-.active>a {
-    color: #fff;
+.active > a {
+	color: #fff;
 }
 
 .code-snippet {
-    background-color: #030303;
-    padding: 2.4rem 1.8rem;
-    min-height: 10rem;
-    max-width: 90%;
-    font-family: monospace;
-    font-size: 2rem;
-    border-radius: .6rem;
+	background-color: #030303;
+	padding: 2.4rem 1.8rem;
+	min-height: 10rem;
+	max-width: 90%;
+	font-family: monospace;
+	font-size: 2rem;
+	border-radius: 0.6rem;
 }
