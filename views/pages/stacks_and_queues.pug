@@ -1,0 +1,54 @@
+extends ../layout.pug
+
+block content
+    h2.title Stacks and Queues 
+    h3.title Stacks 
+    div 
+        h4.subtitle Definition 
+        p Stack is a  sequential access data structure that adds and removes according to the LIFO principle, ie. Last In First Out 
+
+        h4.subtitle Some common methods:
+        p 
+            strong push(element): 
+            | adds element on top of the stack. Takes on an object as the argumnets.
+        p 
+            strong pop(): 
+            | Removes an element from the top of the stack and doesnot take on any value.
+        p 
+            strong peek(): 
+            | Allows you to get an element from  the top of the stack without removing it.
+        p 
+            strong contains(element): 
+            |This method is used to search through the stack. It returns a boolean value 
+
+        h4.subtitle Time Complexity Equations of a Stack 
+        p Accessing: O(n) 
+        p Searching: O(n) 
+        p Inserting: O(1) 
+        p Deleting: O(1)
+
+        h3.title Queues
+        div 
+            h4.subtitle Definition 
+            p Queue is sequential data structure that follows the FIFO methodology.
+
+            h4.subtitle Some common methods:
+            p 
+                strong enqueue(element): 
+                | add element to the tail of the queue
+            p 
+                strong dequeue(): 
+                | removes an element from the head of the queue.
+            p 
+                strong peek():
+                | returns an element that is at the fore front of the queue without removing it
+            p 
+                strong contains(element): 
+                | returns whether an element exists in the queue
+
+            h4.subtitle Time Complexity Equations of a Stack 
+            p Accessing: O(n) 
+            p Searching: O(n) 
+            p Inserting: O(1) 
+            p Deleting: O(1)
+

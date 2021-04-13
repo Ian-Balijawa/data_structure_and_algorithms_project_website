@@ -1,0 +1,39 @@
+extends ../layout.pug
+
+block content
+    h3.title Analysis of Algorithms
+    div 
+        p The efficiency of an algorithm can be decided by measuring the
+            | erformance of an algorithm. We can measure the performance of an
+            | algorithm by computing two factors:
+            ul 
+                li Amount of time required by an algorithm to execute
+                li Amount of storage required by an algorithm
+        p This is popularly known as 
+            strong time complexity 
+            | and 
+            strong space complexity of an algoithm
+
+        p If one asks the question that how much time it takes to execute this
+            |statement. It is impossible to determine exact timing taken by the
+            |statement to execute unless we have the following information:
+
+            p.item The machine that is used to execute this statement,
+            p.item Machine language instruction set.
+            p.item The time required by each machine instruction.
+            p.item The translation a compiler will make for this statement to machine language
+            p.item And the kind of operating system (multi-programming or time sharing)
+        
+        h4.subtitle How to analyze Programs
+        p The information may vary from machine to machine and perhaps we won’t get the exact figures.
+        p So the better ideas is to determine the time taken by each instruction to execute called the 
+            strong ‘frequency count’.
+        p There are basically two approaches of analyzing algorithms:
+            p.item.bold Empirical/ Experimental analysis
+            p.item.bold Analytical approach
+
+        h4.subtitle Empirical/Experimental Analysis
+        p One way to study the efficiency of an algorithm is to implement 
+            | it and experiment by running the program on various test inputs while recording the time spent during each execution
+        p The key is that if we record the time immediately before executing the algorithm and then immediately after, we can measure the elapsed time of an algorithm’s execution by computing the difference of those times.
+        p Because we are interested in the general dependence of running time on the size and structure of the input, we should perform independent experiments on many different test inputs of various sizes.

@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+        link(rel="stylesheet", href="styles.css")
+        link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css")
+        script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js") 
+    body
+        div.main-wrapper
+            include includes/header
+            .wrapper 
+                include includes/sidebar
+                .main-content 
+                    .content 
+                        block content
+                .topics
+                    .topics__content
+                        h3 Topics
+                        ul.topics__list
+                            for topic in topics
+                                li.topics__item 
+                                    a(href="#", title="title")= topic
+
+        script(src="app.js")
+        
